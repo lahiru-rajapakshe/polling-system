@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Poll} from "../dto/poll";
-import {UserService} from "../service/user.service";
+import {UserService} from "../service/user-service";
 import {Router} from "@angular/router";
 
 @Component({

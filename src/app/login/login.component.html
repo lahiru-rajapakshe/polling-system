@@ -1,28 +1,12 @@
-<br><br><br>
-<h1 style="text-align: center">polling System</h1>
-<br>
 
-<form>
-  <div class="form-group">
-
-    <input #txtName style="text-align: center" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ur name here" [(ngModel)]="name">
-    <!--
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
-    {{name}}
-  </div>
-  <br>
-
-  <br>
-  <div class="container">
-    <div class="vertical-center">
-      <button  type="button" class="btn btn-primary" (click)="enter()">Submit</button>
+<div id="wrapper">
+  <form>
+    <h1>Polling System for DEP-8</h1>
+    <input #txtName name="txt-name" class="form-control" type="text" placeholder="Enter your name"
+           [(ngModel)]="name">
+    <div id="button-wrapper">
+      <button class="btn btn-primary" (click)="enter()">🔐 ENTER</button>
     </div>
-  </div>
-
-  <div *ngIf="valid">
-    You cannot access right now !,try again
-  </div>
-
-</form>
-
-
+    <div id="invalid" *ngIf="invalid">Access denied: invalid name</div>
+  </form>
+</div>

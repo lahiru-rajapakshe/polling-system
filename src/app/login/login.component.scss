@@ -1,14 +1,25 @@
-.container {
-  height: 100px;
-  position: relative;
-  //border: 3px solid green;
+
+#wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  height: 100vh;
+  text-align: center;
+
+  input{
+    margin-top: 20px;
+    text-align: center;
+  }
 }
 
-.vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 20%;
-  left: 46%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+#button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#invalid{
+  color: red;
+  margin-top: 15px;
 }
