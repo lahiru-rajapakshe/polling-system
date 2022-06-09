@@ -18,6 +18,10 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if(this.userService.getPrincipal())
+    {
+      this.routerService.navigateByUrl('/dashboard');
+    }
   }
 
   enter(): void {
