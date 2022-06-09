@@ -21,8 +21,7 @@
 
 <br><br>
 <main>
-  <app-poll></app-poll>
-  <app-poll></app-poll>
-  <app-poll></app-poll>
-  <app-poll></app-poll>
+  <app-poll *ngFor="let a of numbers"></app-poll>
+<h2 *ngIf="polls.length==0" class="text-center text-black">Create a new poll for get started</h2>
+
 </main>
