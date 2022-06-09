@@ -10,7 +10,7 @@ export class LoginComponent implements OnInit {
 
   name = "";
   valid=false;
-  @ViewChild("txtname")
+  @ViewChild("txtName")
   txtName!:ElementRef<HTMLInputElement>;
 
 
