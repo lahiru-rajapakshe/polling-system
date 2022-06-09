@@ -24,6 +24,7 @@ export class LoginComponent implements OnInit {
     if (this.userService.login(this.name)) {
       alert('Goda');
       this.valid=true;
+      this.routerService.navigateByUrl('/dashboard');
     } else {
       alert('Kachal');
       this.valid=false;
