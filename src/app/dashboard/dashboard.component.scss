@@ -8,7 +8,13 @@
   margin: 0;
   position: absolute;
   top: 20%;
-  left: 46%;
+  left: 40%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+main{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
 }
