@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Poll} from "../dto/poll";
 
 @Component({
   selector: 'app-dashboard',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  polls:Array<number=[];
+  polls:Array<Poll>=[];
 
 
 
@@ -16,7 +17,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  createPolls(){
-    this.polls.push(1);
+  createPolls(title:string){
+    this.polls.push(new Poll(Math.random(),title,this.userService.getPrincipal()));
   }
 }
