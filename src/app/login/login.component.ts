@@ -1,4 +1,4 @@
-import {Component, ElementRef, OnInit} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {UserService} from "../service/user-service";
 
 @Component({
@@ -10,6 +10,7 @@ export class LoginComponent implements OnInit {
 
   name = "";
   valid=false;
+  @ViewChild("txtname")
   txtName!:ElementRef<HTMLInputElement>;
 
 
