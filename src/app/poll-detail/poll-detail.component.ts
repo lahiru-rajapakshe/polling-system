@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Poll} from "../dto/poll";
 
 @Component({
   selector: 'app-poll-detail',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PollDetailComponent implements OnInit {
 
+  @Input()
+  poll: Poll;
   constructor() { }
 
   ngOnInit(): void {
