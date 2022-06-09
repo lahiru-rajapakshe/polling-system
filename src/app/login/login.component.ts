@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, OnInit} from '@angular/core';
 import {UserService} from "../service/user-service";
 
 @Component({
@@ -10,6 +10,8 @@ export class LoginComponent implements OnInit {
 
   name = "";
   valid=false;
+  txtName!:ElementRef<HTMLInputElement>;
+
 
   constructor(private userService: UserService) {
   }
@@ -24,6 +26,8 @@ export class LoginComponent implements OnInit {
     } else {
       alert('Kachal');
       this.valid=false;
+      this.txtName.nativeElement.select();
+      this.txtName.nativeElement.focus();
     }
   }
 }
