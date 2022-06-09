@@ -7,11 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  numbers
+  polls=[];
+
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  createPolls(){
+    this.polls.push(1);
+  }
 }
