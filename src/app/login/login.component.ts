@@ -9,6 +9,7 @@ import {UserService} from "../service/user-service";
 export class LoginComponent implements OnInit {
 
   name = "";
+  valid=false;
 
   constructor(private userService: UserService) {
   }
@@ -19,8 +20,10 @@ export class LoginComponent implements OnInit {
   enter(): void {
     if (this.userService.login(this.name)) {
       alert('Goda');
+      this.valid=true;
     } else {
       alert('Kachal');
+      this.valid=false;
     }
   }
 }
