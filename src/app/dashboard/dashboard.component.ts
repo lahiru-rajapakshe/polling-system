@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Poll} from "../dto/poll";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-dashboard',
@@ -12,7 +13,12 @@ export class DashboardComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(
+    private userService:userSevice,
+    private routerSrvice:Router
+  ) {
+
+  }
 
   ngOnInit(): void {
   }
