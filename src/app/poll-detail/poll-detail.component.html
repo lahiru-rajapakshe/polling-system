@@ -1,14 +1,17 @@
-
 <header>
-  <button>
-  <img class="back-img" src="assets/images/back.png" alt="">
-
-  </button>
-  <h1 >{{poll.title}}</h1>
-  <span>up</span>{{poll.upVote}}
-  <span>down</span>{{poll.downVote}}
-  <button>
-
-    <img src="assets/images/trash-bin.png" class="trash-img" alt="">
-  </button>
+  <div class="d-flex gap-2">
+    <img id="back" src="assets/image/back-arrow.png" alt="Back">
+    <h1 class="text-black">Here is the title</h1>
+  </div>
+  <img id="delete" src="assets/image/bin.png" alt="delete">
 </header>
+<small class="text-black-50">Created by: Admin</small>
+<main>
+  <div id="up-wrapper">
+    10 <span id="up">▲</span>
+  </div>
+  <div id="down-wrapper">
+    <span id="down">▼</span> 05
+  </div>
+</main>
+
