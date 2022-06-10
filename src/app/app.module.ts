@@ -16,7 +16,9 @@ import {FormsModule} from "@angular/forms";
     LoginComponent,
     DashboardComponent,
     PollComponent,
-    PollDetailComponent
+    PollDetailComponent,
+    NgProgressModule,
+    NgProgressHttpModule
   ],
   imports: [
     BrowserModule,
