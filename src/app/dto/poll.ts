@@ -1,9 +1,6 @@
 export class Poll {
-  constructor(public id:number,
-              public title:string,
-              public createBy:string,
-              public upVote:number=0,
-              public downVote:number=0){
 
+  constructor(public title: string, public createdBy: string, public id: number | null = null,
+              public upVotes: number = 0, public downVotes: number = 0) {
   }
 }

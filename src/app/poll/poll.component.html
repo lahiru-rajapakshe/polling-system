@@ -1,9 +1,9 @@
-<div class="container">
-  <h1>He er is the title</h1>
-  <small>created by lahiru </small>
-  <br>
-<!--  <button>up</button>10-->
-<!--  <button>down</button>5-->
-  <a style="text-align: center" href="#" class="myButton">up</a>10
-  <a style="text-align: center" href="#" class="myButton">down</a>5
-</div>
+<section>
+  <h1>{{poll.title}}</h1>
+  <div>
+    <span id="up">▲</span> {{poll.upVotes}}
+    <span id="down">▼</span> {{poll.downVotes}}
+  </div>
+</section>
+<small class="text-black-50">Poll ID: #{{poll.id}}; Created by: {{poll.createdBy}}</small>
+

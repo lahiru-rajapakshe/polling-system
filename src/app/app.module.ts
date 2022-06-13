@@ -7,8 +7,9 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PollComponent } from './poll/poll.component';
 import { PollDetailComponent } from './poll-detail/poll-detail.component';
-import {UserService} from "./service/user-service";
+import {UserService} from "./service/user.service";
 import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,14 +17,13 @@ import {FormsModule} from "@angular/forms";
     LoginComponent,
     DashboardComponent,
     PollComponent,
-    PollDetailComponent,
-    NgProgressModule,
-    NgProgressHttpModule
+    PollDetailComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
-    FormsModule
+    HttpClientModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

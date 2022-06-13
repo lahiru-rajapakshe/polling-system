@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'polling-system';
+  texts = ["ijse", "esoft", "abc", "KKK"];
+
+  add() {
+    this.texts.push('Something' + Math.random());
+  }
+
+  remove() {
+    this.texts.pop();
+  }
 }
